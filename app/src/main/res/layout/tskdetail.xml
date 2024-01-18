@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".tskdetail">
+
+    <EditText
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#0EC1D8"
+        />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Task Description"
+        android:backgroundTint="#0EC1D8"
+        />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Task Date"
+        android:shadowColor="#3A8A95"
+        android:backgroundTint="#0EC1D8"
+        />
+
+    <CheckBox
+        android:id="@+id/completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Completed"
+        android:textColor="#2EC9DD" />
+
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0EC1D8"
+        android:onClick="savetask"
+        android:text="Save Task"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/buttonDeleteTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF2819"
+        android:onClick="deletetask"
+        android:text="Delete Task"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
